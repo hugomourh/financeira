@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Financeira HTX</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <h1>Financeira HTX</h1> 
+
+        <div class="descricao">
+        <a href="">Serviços</a>
+        <a href="">Sobre nós</a>
+        <a href="">Contato</a>  
+        
+    </div>   
+    </div>
+ 
+   <div class="corpo">
+    <h1 class="titulo">SOBRE NÓS</h1>
+
+    <p class="legendaSobreNos">Atuando a mais de 20 anos no mercado de serviços financeiro a nossa financeira <br> trás para você e menor taxa do mercado. <br> <span class="legenda_1"> VEM COM A GENTE </span></p>
+   
+   </div>
+
+   <h1 class="servicos">NOSSOS SERVIÇOS</h1>
+
+   <div class="corpo">
+ <h1 class="titulo">EMPRÉSTIMO </h1>
+
+ <p class="legendaSobreNos">Com uma taxa de apenas 1,8% ao mês, oferecemos a menor taxa de mercado podendo ser paga em até 36x</p>
+   </div>
+
+   <div class="corpo">
+    <h1 class="titulo">FINANCIAMENTO DE VEÍCULO</h1>
+    <p class="legendaSobreNos">Aqui você pode pagar seu carro em até 48x <br> E a melhor parte e que você ganha cinco parcelas grátis.</p>
+    
+   </div>
+
+   <div class="corpo">
+   <h1 class="titulo">Financiamento do próprio imovel</h1>
+   <p class="legendaSobreNos">Utilize o seu FGTS como entrada. <br> Pague em até 360 parcelas</p>
+  
+   </div>
+ 
+ <h1 class="titulo">Fazer simulação</h1>
+
+
+
+
+
+
+
+   
+ <div class="formulario">
+  <form id="formulario" method="post" action="#">
+    <div class="formulario">
+      <label for="salario">Informe seu salário:</label><br>
+      <input type="number" id="salario" name="salario" step="0.01" placeholder="Digite aqui" required>
+    </div>
+
+    <div class="parcelas">
+      <label for="parcelas">Parcelas:</label><br>
+      <input type="number" id="parcelas" name="parcelas" placeholder="Digite aqui" required>
+    </div>
+
+    <div class="formulario">
+      <label for="emprestimo">Valor a ser emprestado:</label><br>
+      <input type="number" id="emprestimo" name="emprestimo" step="0.01" placeholder="Digite aqui" required>
+    </div>
+
+    <div class="formulario">
+      <label for="servico">Escolha uma opção:</label><br>
+      <select name="servico" id="servico">
+        <option value="emprestimo">Empréstimo</option>
+        <option value="carro">Financiamento Veicular</option>
+        <option value="casa">Financiamento de Imóvel</option>
+      </select>
+    </div>
+
+    <button type="submit">Simular Financiamento</button>
+  </form>
+</div>
+
+<div id="valor_Parcelas" class="resultado"></div>
+
+<script src="calculo.js" defer></script>
+
+
+
+
+
+
+
+</body>
+</html>
